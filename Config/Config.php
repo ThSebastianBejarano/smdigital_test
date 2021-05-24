@@ -9,7 +9,7 @@
 
   //Rutas
   define('RUTA_MAIN', dirname(dirname(__FILE__)));
-  define('RUTA_URL', 'http://localhost/smdigital_Test/');
+  define('RUTA_URL', 'https://test-doctores.herokuapp.com/');
   define('RUTA_SITIO', 'CRUD_Doctores');
 
  ?>
