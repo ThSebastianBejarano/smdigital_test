@@ -1,0 +1,9 @@
+Options -Multiviews
+Options -Indexes
+RewriteEngine On
+ErrorDocument 404 /smdigital_Test/404.html
+RewriteBase /smdigital_Test/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.(css|gif|ico|jpg|js|png|swf|txt)$
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

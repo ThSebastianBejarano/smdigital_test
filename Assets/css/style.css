@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+:root {
+  --blue: #0e0620;
+  --white: #fff;
+  --green: #2ccf6d;
+  --offcanvas-width: 270px;
+  --topNavBarHeight: 56px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.h1404 {
+  font-size: 7.5em;
+  margin: 15px 0px;
+  font-weight:bold;
+}
+.h2404 {
+  font-weight:bold;
+}
+
+.menu{
+  margin-left: 269px;
+}
+
+.siderbar-nav{
+  width: var(--offcanvas-width);
+  position: fixed;
+  height: 100%;
+}
+
+@media(min-width: 992px){
+  body{
+    overflow: auto !important;
+  }
+  .offcanvas-backdrop::before{
+    display: none;
+  }
+  main{
+    margin-left: var(--offcanvas-width);
+  }
+  .siderbar-nav{
+    transform: none;
+    visibility: visible !important;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body {
+    display:block;
+  }
+  .container {
+    margin-top:70px;
+    margin-bottom:70px;
+  }
+} 
