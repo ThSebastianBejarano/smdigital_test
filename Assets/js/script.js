@@ -63,7 +63,7 @@ function buscar_datos(link,consulta) {
 
 $(document).on('keyup', '#caja', function () {
   var valor = $(this).val()
-    var link = 'http://localhost/smdigital_Test/';
+    var link = 'https://test-doctores.herokuapp.com/';
     buscar_datos(link,valor);
 })
 
